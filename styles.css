@@ -28,7 +28,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 97vh;
+    height: 100vh;
     margin: 0 auto;	
 }
 .item {
