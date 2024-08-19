@@ -44,15 +44,11 @@ body {
     gap: 10px;
 }
 .button-container {
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust button size and spacing */
-    justify-content: center; /* Centers grid items horizontally */
-    align-items: center;     /* Centers grid items vertically */
-    height: 100vh;         
-    gap: 10px;  
-    max-width: 100%;
-    padding: 10px;
+    display: flex;
+    justify-content: center; /* Centers buttons horizontally */
+    align-items: center;     /* Centers buttons vertically */
+    height: 100vh;           /* Full viewport height to center vertically */
+    gap: 10px;               /* Space between buttons */
 }
 
 .bigbutton {
