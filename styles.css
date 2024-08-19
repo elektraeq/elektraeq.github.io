@@ -31,7 +31,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     height: 100vh;
-    margin: 0 auto;
     justify-content: center;
 }
 .item {
