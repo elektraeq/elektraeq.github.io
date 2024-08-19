@@ -1,4 +1,9 @@
-body {
+html, body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
     font-family: "Kanit", sans-serif;
     background-color: black;
     background-image: url("background.svg");
@@ -48,8 +53,8 @@ body {
     flex-wrap: wrap;
     height: 100vh;
     justify-content: center;
-    align-items: center; /* Center buttons vertically */
-    padding: 0 20px; /* Optional: Add horizontal padding to container */
+    align-items: center;
+    padding: 0 20px; 
     box-sizing: border-box;
 }
 
