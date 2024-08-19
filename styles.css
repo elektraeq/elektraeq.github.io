@@ -57,12 +57,14 @@ body {
     font-weight: 700;
     cursor: pointer;
     color: #bd9d20;
-    flex: 0 0 auto;
     background-color: black;
     border: none;
     box-sizing: border-box;
     min-width: 200px; /* Minimum width */
     min-height: 70vh; /* Minimum height */
+    display: flex; /* Use flexbox inside the button */
+    align-items: center; /* Center text vertically inside button */
+    justify-content: center;
 }
 
 .bigbutton:hover {
