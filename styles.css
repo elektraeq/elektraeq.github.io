@@ -61,7 +61,7 @@ body {
     background-color: black;
     border: none;
     box-sizing: border-box;
-    min-width: 150px; /* Minimum width */
+    min-width: 120px; /* Minimum width */
     min-height: 400px; /* Minimum height */
 }
 
