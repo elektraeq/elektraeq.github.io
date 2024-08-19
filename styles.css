@@ -4,6 +4,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .button {
@@ -47,23 +48,6 @@ body {
     background-color: #bd9d20;
 }
 
-h1 {
-    font-weight: 700;
-    font-size: 64px;
-    color: white;
-}
-
-h3 {
-    color: #bd9d20;
-    font-weight: 400;
-}
-
-.block {
-    display: block;
-    width: 33%;
-	
-} 
-
 .center {
     display: flex;
     height: 600px;
@@ -71,10 +55,26 @@ h3 {
     align-items: center;
 }
 
-h1:hover {
-    text-shadow: 0 0 20px #bd9d20;
+h3 {
+    color: #bd9d20;
+    font-weight: 400;
 }
 
-.pdf {
-    width: 100%;
+h1 {
+    font-size: 6em;
+    font-weight: bold;
+    color: #ffd700;
+    background:linear-gradient(145deg, #BF953F, #F7E3A6, #B38728, #F7E19B, #AA771C);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: metallic 5s ease infinite;
+}
+
+@keyframes metallic {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
 }
