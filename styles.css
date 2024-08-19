@@ -27,7 +27,6 @@ body {
 }
 
 .container {
-    grid-auto-flow: column;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -53,17 +52,17 @@ body {
 }
 
 .bigbutton {
-    padding: 15px 60px;
+    padding: 10px 50px;
     font-size: 36px;
     font-weight: 700;
     cursor: pointer;
-    flex: 0 0 auto;
+    grid-auto-flow: column;
     color: #bd9d20;
     background-color: black;
     border: none;
     box-sizing: border-box;
-    min-width: 200px; /* Minimum width */
-    min-height: 500px; /* Minimum height */
+    min-width: 100px; /* Minimum width */
+    min-height: 400px; /* Minimum height */
 }
 
 .bigbutton:hover {
