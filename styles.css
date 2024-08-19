@@ -62,8 +62,8 @@ body {
     background-color: black;
     border: none;
     box-sizing: border-box;/* Minimum width */
-    min-width: 150px; /* Minimum width of each button */
-    min-height: 100px; /* Minimum height of each button */
+    min-width: 200px; /* Minimum width of each button */
+    min-height: 70vh; /* Minimum height of each button */
     margin: 10px; /* Optional: Add margin between buttons */
 }
 
