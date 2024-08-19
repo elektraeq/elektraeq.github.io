@@ -61,8 +61,8 @@ body {
     background-color: black;
     border: none;
     box-sizing: border-box;
-    min-width: 70vh; /* Minimum width */
-    min-height: 500px; /* Minimum height */
+    min-width: 200px; /* Minimum width */
+    min-height: 70vh; /* Minimum height */
 }
 
 .bigbutton:hover {
