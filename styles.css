@@ -59,8 +59,7 @@ body {
     color: #bd9d20;
     background-color: black;
     border: none;
-    box-sizing: border-box;
-    min-width: 100px; /* Minimum width */
+    box-sizing: border-box;/* Minimum width */
     min-height: 400px; /* Minimum height */
 }
 
