@@ -44,23 +44,27 @@ body {
 }
 .button-container {
     display: flex;
-    justify-content: center; /* Centers buttons horizontally */
-    align-items: center;     /* Centers buttons vertically */
-    height: 100vh;           /* Full viewport height to center vertically */
-    gap: 10px;               /* Space between buttons */
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    align-items: center; /* Center buttons vertically */
+    padding: 0 20px; /* Optional: Add horizontal padding to container */
+    box-sizing: border-box;
 }
 
 .bigbutton {
-    padding: 15px 60px;
-    font-size: 36px;
+    padding: 15px 30px;
+    font-size: 24px;
     font-weight: 700;
     cursor: pointer;
-    grid-auto-flow: column;
     color: #bd9d20;
     background-color: black;
     border: none;
     box-sizing: border-box;/* Minimum width */
-    min-height: 400px; /* Minimum height */
+    min-width: 150px; /* Minimum width of each button */
+    min-height: 100px; /* Minimum height of each button */
+    margin: 10px; /* Optional: Add margin between buttons */
 }
 
 .bigbutton:hover {
