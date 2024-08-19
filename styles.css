@@ -33,7 +33,6 @@ body {
     height: 100vh;
     margin: 0 auto;
     justify-content: center;
-    align-items: center;
 }
 .item {
     flex: 1;
@@ -43,6 +42,14 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
+}
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust button size and spacing */
+    justify-content: center; /* Centers grid items horizontally */
+    align-items: center;     /* Centers grid items vertically */
+    height: 100vh;         
+    gap: 10px;              
 }
 
 .bigbutton {
