@@ -28,6 +28,8 @@ body {
     display: flex;
     flex-direction: row;
     height: 97vh;
+    width: 80%;
+    margin: 0 auto;	
 }
 
 .bigbutton {
