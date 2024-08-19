@@ -52,8 +52,7 @@ body {
 }
 
 .bigbutton {
-    margin: 0;
-    padding: 1000px 50px;
+    padding: 10px 50px;
     font-size: 32px;
     font-weight: 700;
     cursor: pointer;
