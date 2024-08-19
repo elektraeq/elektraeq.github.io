@@ -95,9 +95,106 @@ h3 {
 }
 
 h1:hover {
-    text-shadow: 0 0 20px #bd9d20;
+	
+    /*text-shadow: 0 0 20px #bd9d20;*/
 }
 
 .pdf {
     width: 100%;
+}
+/* General body styling */
+body {
+    display: flex; /* Center content horizontally */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    background: #000; /* Black background */
+    margin: 0; /* Remove default margin */
+}
+
+/* Glitch effect styling for the h1 element */
+.glitch {
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-size: 4rem; /* Font size */
+    color: #fff; /* White text color */
+    position: relative; /* Positioning for pseudo-elements */
+    display: inline-block; /* Inline block to fit text */
+    overflow: hidden; /* Hide overflowing content */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+/* Pseudo-element for the first layer of glitch effect */
+.glitch::before {
+    content: 'Glitch Effect'; /* Text content */
+    position: absolute; /* Absolute positioning to overlay text */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width of parent */
+    height: 100%; /* Full height of parent */
+    overflow: hidden; /* Hide overflowing content */
+    color: #0ff; /* Cyan color for glitch text */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1; /* Stack above original text */
+    opacity: 0.8; /* Slightly transparent */
+    clip: rect(0, 0, 0, 0); /* Clip content to create a flicker effect */
+    animation: glitch-anim 1s infinite; /* Apply glitch animation */
+    text-shadow: -1px 0 red, 1px 0 blue; /* Red and blue text shadows */
+}
+
+/* Pseudo-element for the second layer of glitch effect */
+.glitch::after {
+    content: 'Glitch Effect'; /* Text content */
+    position: absolute; /* Absolute positioning to overlay text */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width of parent */
+    height: 100%; /* Full height of parent */
+    overflow: hidden; /* Hide overflowing content */
+    color: #0ff; /* Cyan color for glitch text */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1; /* Stack above original text */
+    opacity: 0.8; /* Slightly transparent */
+    clip: rect(0, 0, 0, 0); /* Clip content to create a flicker effect */
+    animation: glitch-anim 1.5s infinite; /* Apply glitch animation */
+    text-shadow: 1px 0 green, -1px 0 purple; /* Green and purple text shadows */
+}
+
+/* Trigger the glitch animation on hover */
+.glitch:hover::before,
+.glitch:hover::after {
+    animation-play-state: running; /* Ensure animation runs on hover */
+}
+
+/* Keyframes for glitch animation */
+@keyframes glitch-anim {
+    0% {
+        transform: translateX(0); /* Start position */
+        clip: rect(0, 100%, 100%, 0); /* Clip content */
+        opacity: 1; /* Full opacity */
+    }
+    20% {
+        transform: translateX(-10px); /* Move left */
+        clip: rect(0, 100%, 100%, 0); /* Clip content */
+        opacity: 0.8; /* Slightly transparent */
+    }
+    40% {
+        transform: translateX(10px); /* Move right */
+        clip: rect(0, 100%, 100%, 0); /* Clip content */
+        opacity: 0.6; /* More transparent */
+    }
+    60% {
+        transform: translateX(-10px); /* Move left */
+        clip: rect(0, 100%, 100%, 0); /* Clip content */
+        opacity: 0.4; /* Even more transparent */
+    }
+    80% {
+        transform: translateX(10px); /* Move right */
+        clip: rect(0, 100%, 100%, 0); /* Clip content */
+        opacity: 0.2; /* Almost transparent */
+    }
+    100% {
+        transform: translateX(0); /* Return to start position */
+        clip: rect(0, 100%, 100%, 0); /* Clip content */
+        opacity: 1; /* Full opacity */
+    }
 }
